@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ApptByMonthController">
+   <children>
+      <Button fx:id="returnToRepMenuBtn" layoutX="52.0" layoutY="447.0" mnemonicParsing="false" onAction="#clickReturnToRepMenu" text="Return to Reports Menu" />
+      <ComboBox fx:id="pickMonthBtn" layoutX="283.0" layoutY="447.0" onAction="#clickedMonth" prefHeight="0.0" prefWidth="150.0" promptText="Choose a Month" />
+      <Label fx:id="monthLabel" alignment="CENTER" layoutX="80.0" layoutY="6.0" prefHeight="42.0" prefWidth="422.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="displayMonthAppts" layoutX="31.0" layoutY="99.0" prefHeight="268.0" prefWidth="641.0">
+        <columns>
+          <TableColumn fx:id="apptIdColumn" prefWidth="46.0" text="ID" />
+          <TableColumn fx:id="appointmentTitle" prefWidth="140.0" text="Title" />
+            <TableColumn fx:id="appointmentType" prefWidth="182.0" text="Description" />
+            <TableColumn fx:id="appointmentStart" prefWidth="130.0" text="Start" />
+            <TableColumn fx:id="appointmentEnd" prefWidth="138.0" text="End" />
+        </columns>
+      </TableView>
+      <Label fx:id="numApptsLabel" layoutX="269.0" layoutY="392.0" textFill="#d71b1b">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

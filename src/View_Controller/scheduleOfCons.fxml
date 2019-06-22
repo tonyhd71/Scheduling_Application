@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ScheduleOfConsController">
+   <children>
+      <TableView fx:id="appointmentMainTable" layoutX="7.0" layoutY="19.0" prefHeight="200.0" prefWidth="685.0">
+         <columns>
+            <TableColumn fx:id="apptIdColumn" prefWidth="50.0" text="Appt Id" />
+            <TableColumn fx:id="appointmentCustomer" prefWidth="48.0" text="Cust Id" />
+            <TableColumn fx:id="appointmentTitle" prefWidth="142.0" text="title" />
+            <TableColumn fx:id="appointmentType" prefWidth="161.0" text="description" />
+            <TableColumn fx:id="appointmentLocation" prefWidth="155.0" text="location" />
+            <TableColumn fx:id="appointmentContact" prefWidth="127.0" text="contact" />
+         </columns>
+      </TableView>
+      <Label fx:id="loggedUsrLbl" layoutX="313.0" layoutY="2.0" />
+      <Button fx:id="retToMainCBtn" layoutX="7.0" layoutY="313.0" mnemonicParsing="false" onAction="#retToMainClick" text="Return to Report Menu" />
+   </children>
+</AnchorPane>

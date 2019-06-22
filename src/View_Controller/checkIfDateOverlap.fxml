@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.CheckIfDateOverlapController">
+   <children>
+      <Button fx:id="checkIfDateOverlapBtn" layoutX="259.0" layoutY="119.0" mnemonicParsing="false" onAction="#checkIfDateOverlapClick" text="Button" />
+      <Button fx:id="retunToBtn" layoutX="233.0" layoutY="291.0" mnemonicParsing="false" onAction="#retunToBtnClick" text="Button" />
+   </children>
+</AnchorPane>
