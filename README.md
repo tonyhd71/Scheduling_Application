@@ -1,5 +1,7 @@
 # Scheduling_Application
 user name: acontwgu password: aCpwguPW
+
+
 Scenario:  You are working for a software company that has been
 contracted to develop a scheduling desktop user interface application. 
 The contract is with a global consulting organization that conducts 
